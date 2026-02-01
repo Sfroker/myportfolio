@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>serfroker.ru | Сергей Краснов — Performance & Digital Expert</title>
+    
+    <!-- Подключение Tailwind CSS и иконок -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Подключение внешнего файла стилей -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="text-slate-900">
+
+    <div id="particles-container" class="fixed inset-0 overflow-hidden pointer-events-none z-0"></div>
+
+    <!-- Навигация -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="text-2xl font-black tracking-tighter text-blue-600 italic">Сергей <span class="text-slate-900">Краснов</span></div>
+            <div class="hidden md:flex items-center gap-8 text-xs font-black uppercase tracking-widest">
+                <a href="#home" class="hover:text-blue-600 transition">Главная</a>
+                <a href="#experience" class="hover:text-blue-600 transition">Карьера</a>
+                <a href="#portfolio" class="hover:text-blue-600 transition">Портфолио</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Контакты</a>
+            </div>
+            <a href="https://t.me/froker" target="_blank" class="px-6 py-2 bg-slate-900 text-white rounded-full font-bold text-xs hover:bg-blue-600 transition shadow-lg uppercase tracking-wider">
+                Обсудить проект
+            </a>
+        </div>
+    </nav>
+
+    <!-- ГЛАВНЫЙ ЭКРАН (HERO) -->
+    <section id="home" class="relative min-h-screen flex items-center pt-20 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center z-10">
+            <div class="order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 px-3 py-1 mb-6 text-[10px] font-bold tracking-widest text-blue-600 uppercase bg-blue-50 rounded-md border border-blue-100">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
+                    </span>
+                    Performance & Digital Expert
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 tracking-tighter leading-tight text-slate-900 uppercase">
+                    Маркетинг в <span class="text-blue-600">цифрах</span> <br> Бизнес в <span class="text-blue-600">росте</span>
+                </h1>
+                <p class="text-lg text-slate-500 mb-10 leading-relaxed max-w-xl font-medium">
+                    Меня зовут Сергей Краснов. 10 лет я превращаю данные в рост бизнеса, создаю конверсионные сайты и выстраиваю стратегию для федеральных проектов и частного бизнеса.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 mb-10 border-l-4 border-blue-600 pl-8">
+                    <div>
+                        <div class="text-4xl font-black text-slate-900 counter" data-target="10">0</div>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Лет экспертизы</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-black text-slate-900 counter" data-target="50">0</div>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Проектов</p>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="text-4xl font-black text-slate-900 counter" data-target="15">0</div>
+                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mt-1">Млн бюджета</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#portfolio" class="px-10 py-5 bg-blue-600 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-700 transition shadow-2xl shadow-blue-200">Смотреть кейсы</a>
+                    <a href="#experience" class="px-10 py-5 bg-white border border-slate-200 text-slate-900 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-slate-50 transition">Мой путь</a>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end relative">
+                <div class="relative w-64 h-64 md:w-[420px] md:h-[420px]">
+                    <div class="w-full h-full bg-slate-200 rounded-[48px] overflow-hidden shadow-2xl border-[10px] border-white relative z-10 rotate-2 hover:rotate-0 transition duration-700">
+                        <img src="img/IMG_1938.jpg" alt="Сергей Краснов" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-1000">
+                        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-blue-600/60 to-transparent flex items-end p-6">
+                            <svg class="w-full h-10" viewBox="0 0 100 40"><path class="graph-path" d="M0,35 Q15,10 30,25 T60,5 T100,20" fill="none" stroke="white" stroke-width="3" /></svg>
+                        </div>
+                    </div>
+                    <div class="floating-badge absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-2xl border border-slate-100 z-20">
+                        <i class="bi bi-graph-up-arrow text-blue-600 text-2xl"></i>
+                        <p class="text-[8px] font-black text-slate-400 uppercase mt-1">Growth</p>
+                        <p class="text-lg font-black text-slate-900">+310%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОЛНЫЙ ПРОФЕССИОНАЛЬНЫЙ ПУТЬ -->
+    <section id="experience" class="py-32 bg-white relative z-10 border-y border-slate-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-black mb-16 text-center tracking-tight uppercase">Профессиональный путь</h2>
+            
+            <div class="space-y-12">
+                <!-- НИУ ВШЭ -->
+                <div class="relative pl-10 border-l-4 border-blue-600">
+                    <div class="absolute -left-3 top-0 w-5 h-5 bg-blue-600 rounded-full border-4 border-white shadow-sm"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-2">
+                        <h3 class="text-xl font-extrabold text-slate-900">Руководитель проекта (НТО)</h3>
+                        <span class="text-[10px] font-black uppercase text-blue-600 bg-blue-50 px-3 py-1 rounded">2024 — Наст. время</span>
+                    </div>
+                    <p class="font-bold text-slate-700 text-sm">НИУ «Высшая школа экономики»</p>
+                    <p class="text-slate-500 text-sm mt-3 leading-relaxed">
+                        Управление рекламным продвижением Национальной технологической олимпиады. Настройка таргета, контекста, PR-стратегия, бюджетирование. Technical Marketing: поддержка сайта, работа с кодом и аналитикой.
+                    </p>
+                </div>
+
+                <!-- ТУТЛА -->
+                <div class="relative pl-10 border-l-4 border-slate-200">
+                    <div class="absolute -left-3 top-0 w-5 h-5 bg-slate-200 rounded-full border-4 border-white shadow-sm"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-2">
+                        <h3 class="text-xl font-extrabold text-slate-900 text-slate-800">Ведущий интернет-маркетолог</h3>
+                        <span class="text-[10px] font-black uppercase text-slate-400 bg-slate-50 px-3 py-1 rounded">2021 — 2024</span>
+                    </div>
+                    <p class="font-bold text-slate-700 text-sm">Ассоциация ресторанов ТУТЛА (17+ проектов)</p>
+                    <p class="text-slate-500 text-sm mt-3 leading-relaxed">
+                        Комплексный маркетинг для сети заведений. Разработка сайтов. Внедрение CRM, автоматизация рассылок, развитие сервисов доставки и гео-сервисов. Управление репутацией и визуальным контентом. 
+                    </p>
+                </div>
+
+                <!-- Ассоциация техкружков -->
+                <div class="relative pl-10 border-l-4 border-slate-200">
+                    <div class="absolute -left-3 top-0 w-5 h-5 bg-slate-200 rounded-full border-4 border-white shadow-sm"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-2">
+                        <h3 class="text-xl font-extrabold text-slate-900 text-slate-800">Таргетолог / Маркетолог</h3>
+                        <span class="text-[10px] font-black uppercase text-slate-400 bg-slate-50 px-3 py-1 rounded">2020 — 2021</span>
+                    </div>
+                    <p class="font-bold text-slate-700 text-sm">НКО Ассоциация участников технологических кружков</p>
+                    <p class="text-slate-500 text-sm mt-3 leading-relaxed">
+                        Лидогенерация для образовательных программ через FB, VK, MyTarget. Оптимизация стоимости привлечения участника и работа с большими данными.
+                    </p>
+                </div>
+
+                <!-- Glog -->
+                <div class="relative pl-10 border-l-4 border-slate-200">
+                    <div class="absolute -left-3 top-0 w-5 h-5 bg-slate-200 rounded-full border-4 border-white shadow-sm"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-2">
+                        <h3 class="text-xl font-extrabold text-slate-900 text-slate-800">Таргетолог</h3>
+                        <span class="text-[10px] font-black uppercase text-slate-400 bg-slate-50 px-3 py-1 rounded">2019 — 2020</span>
+                    </div>
+                    <p class="font-bold text-slate-700 text-sm">Рекламные агентства (Москва и Владивосток)</p>
+                    <p class="text-slate-500 text-sm mt-3 leading-relaxed">
+                        Настройка рекламных кампаний для международного рынка. Анализ конверсий, креативный копирайтинг и техническая оптимизация кабинетов.
+                    </p>
+                </div>
+
+                <!-- SGROUP -->
+                <div class="relative pl-10 border-l-4 border-slate-200">
+                    <div class="absolute -left-3 top-0 w-5 h-5 bg-slate-200 rounded-full border-4 border-white shadow-sm"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-2">
+                        <h3 class="text-xl font-extrabold text-slate-900 text-slate-800">SMM-менеджер / Таргетолог</h3>
+                        <span class="text-[10px] font-black uppercase text-slate-400 bg-slate-50 px-3 py-1 rounded">2017 — 2019</span>
+                    </div>
+                    <p class="font-bold text-slate-700 text-sm">Рекламное агенство TIRAX и сети ресторанов SGROUP (Чебоксары)</p>
+                    <p class="text-slate-500 text-sm mt-3 leading-relaxed">
+                        Продвижение локальных брендов и проектов в городе. Работа с контентом, вовлечением аудитории и первым платным трафиком в соцсетях.
+                    </p>
+                </div>
+
+                <!-- Начало пути -->
+                <div class="relative pl-10 border-l-4 border-slate-200">
+                    <div class="absolute -left-3 top-0 w-5 h-5 bg-slate-200 rounded-full border-4 border-white shadow-sm"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-2">
+                        <h3 class="text-lg font-bold text-slate-900 text-slate-800">Старт карьеры и дизайн</h3>
+                        <span class="text-[10px] font-black uppercase text-slate-400 bg-slate-50 px-3 py-1 rounded">2015 — 2017</span>
+                    </div>
+                    <p class="text-slate-500 text-sm mt-2">
+                        Работа в сфере ремонта техники, продажи аксессуаров и первые заказы по графическому дизайну. Освоение Adobe CS и основ веб-верстки.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОРТФОЛИО -->
+    <section id="portfolio" class="py-32 bg-slate-50 relative z-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-black mb-10 uppercase">Портфолио проектов</h2>
+                <div class="flex flex-wrap justify-center gap-2 mb-12">
+                    <button class="filter-btn px-6 py-2 bg-white border border-slate-200 rounded-full text-[10px] font-black uppercase tracking-widest transition active" data-filter="all">Все</button>
+                    <button class="filter-btn px-6 py-2 bg-white border border-slate-200 rounded-full text-[10px] font-black uppercase tracking-widest transition" data-filter="web">Сайты</button>
+                    <button class="filter-btn px-6 py-2 bg-white border border-slate-200 rounded-full text-[10px] font-black uppercase tracking-widest transition" data-filter="ads">Реклама</button>
+                    <button class="filter-btn px-6 py-2 bg-white border border-slate-200 rounded-full text-[10px] font-black uppercase tracking-widest transition" data-filter="emails">Рассылки</button>
+                    <button class="filter-btn px-6 py-2 bg-white border border-slate-200 rounded-full text-[10px] font-black uppercase tracking-widest transition" data-filter="crm">CRM</button>
+                    <button class="filter-btn px-6 py-2 bg-white border border-slate-200 rounded-full text-[10px] font-black uppercase tracking-widest transition" data-filter="geo">Карты</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid"></div>
+        </div>
+    </section>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div id="project-modal" class="fixed inset-0 z-[100] bg-slate-900/95 backdrop-blur-md items-center justify-center p-4">
+        <div class="bg-white w-full max-w-5xl max-h-[90vh] rounded-[40px] overflow-hidden flex flex-col relative shadow-2xl">
+            <button onclick="closeModal()" class="absolute top-6 right-6 z-10 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center text-xl hover:bg-slate-100 transition">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div id="modal-body" class="overflow-y-auto"></div>
+            <div class="p-6 bg-slate-50 border-t border-slate-100 flex justify-between items-center">
+                <span class="text-[9px] font-black uppercase text-slate-400 tracking-wider">serfroker.ru</span>
+                <button onclick="nextProject()" class="flex items-center gap-3 px-8 py-3 bg-blue-600 text-white rounded-2xl font-black text-[9px] uppercase tracking-widest hover:bg-blue-700 transition">
+                    Следующий кейс <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- КОНТАКТЫ -->
+    <footer id="contact" class="py-32 bg-slate-900 text-white relative z-10">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-black mb-8 italic tracking-tighter uppercase leading-none">Давайте <br><span class="text-blue-500">работать</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <a href="mailto:sergey@froker.ru" class="p-8 bg-slate-800/50 rounded-[32px] border border-slate-700 hover:bg-blue-600 transition group">
+                    <i class="bi bi-envelope text-4xl text-blue-400 group-hover:text-white transition"></i>
+                    <p class="text-[10px] font-black uppercase tracking-widest text-slate-500 mt-4 group-hover:text-blue-100">Email</p>
+                    <p class="text-lg font-bold mt-1">sergey@froker.ru</p>
+                </a>
+                <a href="https://t.me/froker" target="_blank" class="p-8 bg-slate-800/50 rounded-[32px] border border-slate-700 hover:bg-blue-600 transition group">
+                    <i class="bi bi-telegram text-4xl text-blue-400 group-hover:text-white transition"></i>
+                    <p class="text-[10px] font-black uppercase tracking-widest text-slate-500 mt-4 group-hover:text-blue-100">Telegram</p>
+                    <p class="text-lg font-bold mt-1">@froker</p>
+                </a>
+            </div>
+            <p class="text-[9px] font-black uppercase text-slate-600 tracking-[0.3em]">&copy; Интернет-маркетинг 2026 | КРАСНОВ СЕРГЕЙ</p>
+        </div>
+    </footer>
+
+    <!-- Подключение внешнего скрипта -->
+    <script src="js/script.js"></script>
+</body>
+</html>

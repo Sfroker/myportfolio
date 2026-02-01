@@ -1,0 +1,82 @@
+/* Основные шрифты и настройки */
+body {
+    background-color: #f8fafc;
+    overflow-x: hidden;
+}
+
+/* Эффект стекла для навигации */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+/* Анимация летающих цифр и данных на фоне */
+@keyframes floatNumbers {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.3; }
+    90% { opacity: 0.3; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}
+
+.bg-data {
+    position: absolute;
+    color: #3b82f6;
+    font-family: monospace;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0;
+    animation: floatNumbers 12s linear infinite;
+}
+
+/* Анимация рисования линии графика */
+@keyframes drawLine {
+    to { stroke-dashoffset: 0; }
+}
+
+.graph-path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawLine 4s ease-out forwards;
+}
+
+/* Состояния кнопок фильтра */
+.filter-btn.active {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+/* Скрытие карточек при фильтрации */
+.portfolio-item.hidden {
+    display: none;
+}
+
+/* Состояния модального окна */
+#project-modal {
+    display: none;
+}
+
+#project-modal.active {
+    display: flex;
+}
+
+/* Плавающая анимация для бейджей */
+.floating-badge {
+    animation: floatBadge 3s ease-in-out infinite;
+}
+
+@keyframes floatBadge {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Кастомный скроллбар для модалки */
+#modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+#modal-body::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 10px;
+}
